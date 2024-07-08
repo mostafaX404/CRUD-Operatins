@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      span {
+        color: green;
+      }
+      .alert {
+        display: none;
+      }
+    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+
+  </head>
+
+  <body>
+    <h1 class="text-center">Mostafa Elgamal</h1>
+
+    
+    
+
+    <!--form  -->
+    <div class="container my-5 ">
+      <div class="qoute mb-5">
+        <button class="btn btn-info d-block mb-5 " id="quoteBtn" onclick="generateQuote()" >
+        Generate Quote
+      </button>
+      <div id="loc" class="text-info border border-primary p-4 rounded">"The quieter you become, the more you are able to hear." -- Rumi.
+      </div>  
+    </div>
+      <label for="productName">productName:</label>
+      <input type="text" class="form-control my-3" id="productName" />
+      <p class="alert alert-danger"></p>
+      <label for="productPrice">productPrice:</label>
+      <input type="text" class="form-control my-3" id="productPrice" />
+      <p class="alert alert-danger"></p>
+      <label for="produtCat">produvtCat:</label>
+      <input type="text" class="form-control my-3" id="productCat" />
+      <p class="alert alert-danger"></p>
+      <label for="productDesc">productDesc:</label>
+      <input type="text" class="form-control my-3" id="productDesc" />
+      <p class="alert alert-danger"></p>
+      <button class="btn btn-info" id="mainBtn" >
+        add Product
+      </button>
+      <button class="btn btn-info d-none" id="updateBtn" >
+        Update Product
+      </button>
+
+      <input
+        type="text"
+        placeholder="search"
+        class="form-control my-5"
+        oninput="search(this.value)"
+      />
+      <table class="mt-5 table">
+        <thead>
+          <th>Index</th>
+          <th>productName</th>
+          <th>productPrice</th>
+          <th>productCat</th>
+          <th>productDesc</th>
+          <th>Delete</th>
+          <th>update</th>
+        </thead>
+        
+        <tbody id="tableRow">
+         
+        </tbody>
+      </table>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="string.js"></script>
+
+  </body>
+</html>
